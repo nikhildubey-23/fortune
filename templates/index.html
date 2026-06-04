@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Elements — Ultra Luxury</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='videos/hero_8x1s.mp4') }}" as="video">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="{{ url_for('static', filename='images/fortunelogo.png') }}" alt="Fortune Elements">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#highlights">Highlights</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#map-section">Location</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="{{ url_for('static', filename='videos/hero_8x1s.mp4') }}" type="video/mp4">
+        </video>
+        <div class="hero-pattern"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content" id="heroContent">
+            <img src="{{ url_for('static', filename='images/fortunelogo.png') }}" alt="Fortune Elements" class="logo" fetchpriority="high">
+            <p class="hero-subtitle type-text" data-text="Ultra Luxury Living">Ultra Luxury Living</p>
+            <div class="hero-line"></div>
+            <p class="hero-rera">RERA: PCGRERA070723001649</p>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse"></div>
+            <span>Explore</span>
+        </div>
+    </section>
+
+    <!-- ═══ HIGHLIGHTS ═══ -->
+    <section class="section highlights" id="highlights">
+        <div class="decor-dots decor-dots-1"></div>
+        <div class="decor-dots decor-dots-2"></div>
+        <div class="container">
+            <p class="section-label reveal">Highlights</p>
+            <h2 class="section-title reveal type-text" data-text="The Elements of Luxury">The Elements of <span>Luxury</span></h2>
+            <div class="section-divider reveal"></div>
+            <div class="highlights-wrapper">
+                <div class="highlights-image reveal-left">
+                    <img src="{{ url_for('static', filename='images/img7.jpeg') }}" alt="Fortune Elements">
+                </div>
+                <div class="highlights-grid reveal-right">
+                    <div class="hl-item">
+                        <div class="hl-icon"><span>⊹</span></div>
+                        <h3>Prime Location</h3>
+                        <div class="hl-line"></div>
+                        <p>Premium plots on High Court Road</p>
+                    </div>
+                    <div class="hl-item">
+                        <div class="hl-icon"><span>✦</span></div>
+                        <h3>RERA Approved</h3>
+                        <div class="hl-line"></div>
+                        <p>RERA &amp; TNC approved project</p>
+                    </div>
+                    <div class="hl-item">
+                        <div class="hl-icon"><span>☙</span></div>
+                        <h3>Sky Walk</h3>
+                        <div class="hl-line"></div>
+                        <p>Elevated walkway with lush greenery</p>
+                    </div>
+                    <div class="hl-item">
+                        <div class="hl-icon"><span>◈</span></div>
+                        <h3>Healthy Living</h3>
+                        <div class="hl-line"></div>
+                        <p>Lush greens &amp; open spaces</p>
+                    </div>
+                    <div class="hl-item">
+                        <div class="hl-icon"><span>⟡</span></div>
+                        <h3>24/7 Security</h3>
+                        <div class="hl-line"></div>
+                        <p>Round-the-clock surveillance</p>
+                    </div>
+                    <div class="hl-item">
+                        <div class="hl-icon"><span>❋</span></div>
+                        <h3>Meditation Zone</h3>
+                        <div class="hl-line"></div>
+                        <p>Dedicated garden for wellness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ AMENITIES ═══ -->
+    <section class="section amenities" id="amenities">
+        <div class="container">
+            <p class="section-label reveal">Amenities</p>
+            <h2 class="section-title reveal type-text" data-text="World-Class Facilities">World<span>-</span>Class <span>Facilities</span></h2>
+            <div class="section-divider reveal"></div>
+
+            <!-- All Facilities -->
+            <div class="amenity-cat reveal">
+                <h3 class="amenity-cat-title">
+                    <span class="amenity-cat-marker" style="background: linear-gradient(135deg, var(--green-primary), var(--green-vibrant));"></span>
+                    Sports, Fitness &amp; Lifestyle
+                </h3>
+            </div>
+            <div class="amenity-grid">
+                <div class="amenity-card" data-cat="sports">
+                    <span class="ac-num">01</span>
+                    <div class="ac-icon" style="background: linear-gradient(135deg, var(--green-primary), var(--green-vibrant));"><span>⛹</span></div>
+                    <h4>Basketball Court</h4>
+                    <p>Full-size professional court</p>
+                </div>
+                <div class="amenity-card" data-cat="sports">
+                    <span class="ac-num">02</span>
+                    <div class="ac-icon" style="background: linear-gradient(135deg, var(--green-primary), var(--green-vibrant));"><span>🏐</span></div>
+                    <h4>Volleyball Court</h4>
+                    <p>Beach sand court</p>
+                </div>
+                <div class="amenity-card" data-cat="sports">
+                    <span class="ac-num">03</span>
+                    <div class="ac-icon" style="background: linear-gradient(135deg, var(--green-primary), var(--green-vibrant));"><span>🏸</span></div>
+                    <h4>Badminton Court</h4>
+                    <p>Indoor floodlit court</p>
+                </div>
+                <div class="amenity-card" data-cat="sports">
+                    <span class="ac-num">04</span>
+                    <div class="ac-icon" style="background: linear-gradient(135deg, var(--green-primary), var(--green-vibrant));"><span>🎾</span></div>
+                    <h4>Tennis Court</h4>
+                    <p>Clay court with night lighting</p>
+                </div>
+                <div class="amenity-card" data-cat="sports">
+                    <span class="ac-num">05</span>
+                    <div class="ac-icon" style="background: linear-gradient(135deg, var(--green-primary), var(--green-vibrant));"><span>🏏</span></div>
+                    <h4>Cricket Pitch</h4>
+                    <p>Well-maintained turf pitch</p>
+                </div>
+                <div class="amenity-card" data-cat="sports">
+                    <span class="ac-num">06</span>
+                    <div class="ac-icon" style="background: linear-gradient(135deg, var(--green-primary), var(--green-vibrant));"><span>🏊</span></div>
+                    <h4>Splash Pool</h4>
+                    <p>Temperature-controlled pool</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ WHY FORTUNE ═══ -->
+    <section class="why-section">
+        <div class="why-bg"></div>
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-text">
+                    <p class="section-label reveal" style="color: var(--gold-primary);">Why Fortune</p>
+                    <h2 class="section-title reveal" style="color: var(--white);">Crafted for <span>Excellence</span></h2>
+                    <div class="section-divider reveal" style="background: var(--gold-primary); margin-left: 0;"></div>
+                    <p class="why-desc reveal">Fortune Elements isn't just a residence — it's a statement. Every corner reflects meticulous craftsmanship, where modern architecture meets timeless elegance. From the grand entrance to the finest finishes, experience living that transcends the ordinary.</p>
+                </div>
+                <div class="why-visual reveal">
+                    <video class="clip-video" autoplay muted loop playsinline preload="auto">
+                        <source src="{{ url_for('static', filename='videos/herosectionanimation.3.mp4') }}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <p class="section-label reveal">Gallery</p>
+            <h2 class="section-title reveal type-text" data-text="Experience Fortune">Experience <span>Fortune</span></h2>
+            <div class="section-divider reveal"></div>
+            <div class="gallery-slider">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/img4.jpeg') }}" alt="Modern Design">
+                        <div class="carousel-label">Modern Design</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/img2.jpeg') }}" alt="Premium Spaces">
+                        <div class="carousel-label">Premium Spaces</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/img3.jpeg') }}" alt="Lush Greenery">
+                        <div class="carousel-label">Lush Greenery</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/img1.jpeg') }}" alt="Elegant Living">
+                        <div class="carousel-label">Elegant Living</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/img5.jpeg') }}" alt="Serene Views">
+                        <div class="carousel-label">Serene Views</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/img6.jpeg') }}" alt="Grand Entrance">
+                        <div class="carousel-label">Grand Entrance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ MAP ═══ -->
+    <section class="map-section" id="map-section">
+        <div class="container">
+            <p class="section-label reveal">Location</p>
+            <h2 class="section-title reveal">Find <span>Us</span></h2>
+            <div class="section-divider reveal"></div>
+            <div class="map-layout reveal">
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps?q=Fortune+Element,+Bilaspur&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="map-overlay">
+                        <p><strong>Fortune Elements</strong><br>Beside Hotel Shivainn, High Court Road, Parsada, Bilaspur (C.G.)</p>
+                    </div>
+                </div>
+                <div class="map-image">
+                    <img src="{{ url_for('static', filename='images/brochure.png') }}" alt="Brochure">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <p class="section-label reveal">Get in Touch</p>
+            <h2 class="section-title reveal type-text" data-text="Begin Your Journey">Begin Your <span>Journey</span></h2>
+            <div class="section-divider reveal"></div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="reveal"><span class="label">Address</span><span class="value">Fortune Elements, Beside Hotel Shivainn, High Court Road, Parsada, Bilaspur (C.G.)</span></p>
+                    <p class="reveal"><span class="label">Phone</span><span class="value"><a href="tel:8827911142" class="phone-num">8827911142</a></span></p>
+                    <p class="reveal"><span class="label">Email</span><span class="value"><a href="mailto:marketing@fortuneinfra.net.in">marketing@fortuneinfra.net.in</a></span></p>
+                    <p class="reveal"><span class="label">Social</span><span class="value">@fortune.elements</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-credit">created by <span class="footer-brand">snverse</span></p>
+            <p class="footer-copy">&copy; 2026 Fortune Elements. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ═══ SCRIPTS ═══ -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
